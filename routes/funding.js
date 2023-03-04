@@ -12,7 +12,7 @@ router.get("/", (req, res) => {
         name: info.name,
       type : info.type,
       location: info.location,
-      gender: info.location,
+      gender: info.gender,
       posted : info.posted
       };
     });
