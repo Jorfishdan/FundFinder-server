@@ -24,4 +24,4 @@ router.get("/", (req, res) => {
     return JSON.parse(fundingPreview);
   }
 
-module.exports = router;
+module.exports = router
