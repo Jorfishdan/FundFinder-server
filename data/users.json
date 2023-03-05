@@ -1,12 +1,14 @@
 [
   {
+    "id": "65242fbc-4b67-4101-81ca-b00efc2fd2ec",
     "name": "kimmy",
-    "email": "kimmy@gmail.com",
-    "password": "$2b$10$Rao19VuLNt7drjW.JaOdHOLuK.9ctxyjyQ.aigbJXQxa7DcNx9uEW"
+    "email": "angellica@gmail.com",
+    "password": "54321"
   },
   {
-    "name": "hillary",
-    "email": "hill@gmail.com",
-    "password": "$2b$10$XG1P7L8tP60H8lcmMGIMku3aRhyLjxWed.1dcQMh1IOq1dNdCh83m"
+    "id": "3f01c6a5-9764-4e02-8d2d-a4a58179a549",
+    "name": "fish",
+    "email": "fish@gmail.com",
+    "password": "$2b$10$3xgQltqJAmFlCc/WajVzqeOko4U9C2deHD5MZgo7jaLoNHl0xqURC"
   }
 ]
