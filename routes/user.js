@@ -1,13 +1,14 @@
 const express = require("express");
 const router = express.Router();
 
-const user = {
-    id:1,
-    name:"fish"
-}
+const usersController = require('../controllers/userController')
+router
+    .route('/signup')
+    .post(usersController.signUp)
 
-router.get('/', (req,res)=>{
-    res.json(user)
-})
+router 
+    .route('/login')
+    .post(usersController.login)
+
 
 module.exports = router
