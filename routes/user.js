@@ -9,6 +9,9 @@ router
 router 
     .route('/login')
     .post(usersController.login)
+router 
+    .route('/')
+    .get(usersController.list)
 
 
 module.exports = router

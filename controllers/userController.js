@@ -54,6 +54,10 @@ exports.login = async (req,res)=>{
   }
 }
 
+exports.list =  async (req,res)=>{
+  res.json(users)
+}
+
 function getUsers() {
   const usersFromFile = fs.readFileSync("./data/users.json");
   return JSON.parse(usersFromFile);
