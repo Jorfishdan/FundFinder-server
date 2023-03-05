@@ -16,11 +16,32 @@ router.get("/", (req, res) => {
         type : info.type,
         location: info.location,
         gender: info.gender,
-        posted : info.posted
+        website: info.website,
+        amount: info.amount,
+        due : info.due
+
       };
     });
     res.send(displayFunding);
   });
+
+  router.post("/", (req,res) => {
+    const { name, type, location, gender, website, amount, due} = req.body;
+    const newFund ={
+        id: uuid(),
+        name, 
+        type,
+        location,
+        gender,
+        website,
+        amount, 
+        due,
+    };
+    funding.push(newFund);
+    res.json(newFund)
+    fs.writeFileSync("./data/funding.json", JSON.stringify(funding))
+  
+  })
 
   function fundingList() {
     const fundingPreview = fs.readFileSync("./data/funding.json");
@@ -28,3 +49,6 @@ router.get("/", (req, res) => {
   }
 
 module.exports = router
+
+
+
