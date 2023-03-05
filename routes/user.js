@@ -12,6 +12,9 @@ router
 router 
     .route('/')
     .get(usersController.list)
+router 
+    .route('/')
+    .patch(usersController.reset)
 
 
 module.exports = router
