@@ -3,26 +3,12 @@
       "id": "1",
       "name": "Generation Google Scholarship",
       "type": "scholarship",
-      "location": "North America",
-      "gender": "all",
-      "posted": "April 1st 2023"
-    },
+      "location": ["BC", "Brunswick", "Manitoba", "NS", "NWT", "Newfoundland", "Nunavut", "Ontario", "PEI", "Quebec", "Saskatchewan", "Yukon"],
+      "gender": ["male", "female", "LGBTQIA", "other"],
+      "website" : "https://buildyourfuture.withgoogle.com/scholarships/generation-google-scholarship",
+      "amount": "$5,000",
+      "due": "April 30th 2023"
 
-    {
-        "id": "2",
-        "name": "VIP Women in Technology Scholarship",
-        "type": "scholarship",
-        "location": "U.S",
-        "gender": "women",
-        "posted": "March 1st 2023"
-      },
-      {
-        "id": "3",
-        "name": "Undergraduate Ambassador Awards",
-        "type": "scholarship",
-        "location": "Canda",
-        "gender": "women",
-        "posted": "N/A"
-      }
+    }
   
   ]
