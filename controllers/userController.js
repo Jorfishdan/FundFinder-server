@@ -56,7 +56,7 @@ exports.login = async (req, res) => {
   }
 };
 
-exports.reset = async (req, res) => {
+exports.resetEmail = async (req, res) => {
   const { id, email } = req.body;
   console.log(id);
   const user = users.find((user) => user.id === id);
@@ -75,6 +75,33 @@ exports.reset = async (req, res) => {
   });
 };
 
+exports.resetPassword = async (req, res) => {
+  const { email,password } = req.body;
+  const user = users.find((user) => user.email === email);
+
+  try {
+    const hashedPass = await bcrypt.hash(req.body.password, 10);
+
+    if (!user) {
+      return res.status(404).json({ message: `User with email ${email} not found` });
+    }
+    user.password = hashedPass;
+
+    fs.writeFile("./data/users.json", JSON.stringify(users), (err) => {
+      if (err) {
+        console.log(err);
+        return res.status(500).json({ message: "Error updating user data" });
+      }
+      res.json({
+        message: `Password updated for user with email ${email}`,
+        user,
+      });
+    });
+  } catch (error) {
+    console.log(error);
+    res.status(500).send();
+  }
+};
 
 exports.list = async (req, res) => {
   const limitedUsers = users.map(({ id, email }) => ({ id, email }));
