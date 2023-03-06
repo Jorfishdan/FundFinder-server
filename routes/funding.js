@@ -5,6 +5,21 @@ const { type } = require("os");
 const funding = require("../data/funding.json");
 const { v4:uuid } = require("uuid");
 
+/*
+//COMMENT IN WHEN READY
+
+const fundingController = require(../controllers/fundingController)
+router
+  .route('/')
+  .get(fundingController.display)
+router
+  .route('/')
+  .post(fundingController.newFunds)
+router
+  .route('/')
+  .put(fundingController.updatingFunds)
+*/
+
 // router.get("/", (req, res) => {
 //   const { location, gender } = req.query;
 //     const fundingGallery = fundingList();
