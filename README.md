@@ -56,5 +56,5 @@ Developers               | Email                          | LinkedIn
 ------------------------| ------------------------------ |--------------
 Kimberly Nolsin         |  kimberly.nolsin@gmail.com     | [Kimberly's Profile](https://www.linkedin.com/in/kimberly-nolsin/ "Profile")
 Hilary Britton Foster   |  hilarybrittonfoster@gmail.com | [Hilarys's Profile](https://www.linkedin.com/in/hilary-britton-foster/ "Profile")
-Jordan Fish             |  kjordanfish63@gmail.com       | [Jordan's Profile](https://www.linkedin.com/in/jordan-fish/ "Profile")
+Jordan Fish             |  jordanfish63@gmail.com       | [Jordan's Profile](https://www.linkedin.com/in/jordan-fish/ "Profile")
 
