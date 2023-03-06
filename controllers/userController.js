@@ -76,14 +76,16 @@ exports.resetEmail = async (req, res) => {
 };
 
 exports.resetPassword = async (req, res) => {
-  const { email,password } = req.body;
+  const { email, password } = req.body;
   const user = users.find((user) => user.email === email);
 
   try {
     const hashedPass = await bcrypt.hash(req.body.password, 10);
 
     if (!user) {
-      return res.status(404).json({ message: `User with email ${email} not found` });
+      return res
+        .status(404)
+        .json({ message: `User with email ${email} not found` });
     }
     user.password = hashedPass;
 
