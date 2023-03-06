@@ -37,7 +37,6 @@ exports.display = async (req, res) => {
   }
 };
 
-
 function fundingList() {
   const fundingPreview = fs.readFileSync("./data/funding.json");
   return JSON.parse(fundingPreview);
